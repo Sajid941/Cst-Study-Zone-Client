@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'PlaywriteUSModern' : `"Playwrite US Modern", cursive`
+      },
+      colors:{
+        mainColor: '#06d6a0'
+      }
+    },
   },
   plugins: [
     require('daisyui'),
