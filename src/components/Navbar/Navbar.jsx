@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./navbar.css"
 
 const Navbar = () => {
@@ -45,10 +45,10 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a
+                <Link to="/signUp"
                     className="text-xs md:text-[16px] bg-mainColor py-2 md:py-3 px-3 rounded text-[#073b4c] font-bold hover:cursor-pointer">
-                    Login
-                </a>
+                    Sign Up
+                </Link>
             </div>
         </div>
     );
