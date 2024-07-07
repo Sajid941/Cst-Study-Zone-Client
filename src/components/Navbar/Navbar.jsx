@@ -1,12 +1,25 @@
 import { Link, NavLink } from "react-router-dom";
 import "./navbar.css"
+import useAuth from './../../hook/useAuth';
+import toast from "react-hot-toast";
 
 const Navbar = () => {
+    const { user,logOut } = useAuth()
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/hw">Home Work</NavLink></li>
         <li><NavLink to="/suggestion">Suggestion</NavLink></li>
     </>
+
+    const handleSignOut = ()=>{
+        logOut()
+        .then(()=>{
+            toast.success('Sign Out Successfully')
+        })
+        .catch(error=>{
+            console.error(error)
+        })
+    }
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start">
@@ -31,8 +44,8 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <a className="text-xs md:text-[18px] font-bold leading-[10px]">
-                    <span className="text-[10px] md:text-sm ml-2 md:ml-3 text-mainColor">Cst</span>
+                <a className="text-xs md:text-[18px] font-bold leading-[10px] font-PlaywriteUSModern">
+                    <span className="text-[10px] md:text-sm ml-2 md:ml-3 text-mainColor ">Cst</span>
                     <br />
                     Study Zone
                 </a>
@@ -45,10 +58,18 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link to="/signUp"
-                    className="text-xs md:text-[16px] bg-mainColor py-2 md:py-3 px-3 rounded text-[#073b4c] font-bold hover:cursor-pointer">
-                    Sign Up
-                </Link>
+                {
+                    user ?
+                        <Link 
+                        onClick={handleSignOut}
+                            className="text-xs md:text-[16px] bg-mainColor py-2 md:py-3 px-3 rounded  font-semibold hover:cursor-pointer">
+                            Sign Out
+                        </Link> :
+                        <Link to="/signUp"
+                            className="text-xs md:text-[16px] bg-mainColor py-2 md:py-3 px-3 rounded  font-semibold hover:cursor-pointer">
+                            Sign Up
+                        </Link>
+                }
             </div>
         </div>
     );
