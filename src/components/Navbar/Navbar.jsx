@@ -4,21 +4,21 @@ import useAuth from './../../hook/useAuth';
 import toast from "react-hot-toast";
 
 const Navbar = () => {
-    const { user,logOut } = useAuth()
+    const { user, logOut } = useAuth()
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/hw">Home Work</NavLink></li>
         <li><NavLink to="/suggestion">Suggestion</NavLink></li>
     </>
 
-    const handleSignOut = ()=>{
+    const handleSignOut = () => {
         logOut()
-        .then(()=>{
-            toast.success('Sign Out Successfully')
-        })
-        .catch(error=>{
-            console.error(error)
-        })
+            .then(() => {
+                toast.success('Sign Out Successfully')
+            })
+            .catch(error => {
+                console.error(error)
+            })
     }
     return (
         <div className="navbar bg-base-100">
@@ -60,11 +60,27 @@ const Navbar = () => {
             <div className="navbar-end">
                 {
                     user ?
-                        <Link 
-                        onClick={handleSignOut}
-                            className="text-xs md:text-[16px] bg-mainColor py-2 md:py-3 px-3 rounded  font-semibold hover:cursor-pointer">
-                            Sign Out
-                        </Link> :
+                        <div className="dropdown dropdown-end">
+                            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                                <div className="w-10 rounded-full">
+                                    <img
+                                    className="w-full"
+                                        alt="Tailwind CSS Navbar component"
+                                        src={user?.photoURL? user?.photoURL:'https://i.ibb.co/59VPzDP/anonymous-avatars-grey-circles-removebg-preview.png'} />
+                                </div>
+                            </div>
+                            <ul
+                                tabIndex={0}
+                                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                <li>
+                                    <a>
+                                        Profile
+                                    </a>
+                                </li>
+                                <li><a>Settings</a></li>
+                                <li><a onClick={handleSignOut} >Logout</a></li>
+                            </ul>
+                        </div> :
                         <Link to="/signIn"
                             className="text-xs md:text-[16px] bg-mainColor py-2 md:py-3 px-3 rounded  font-semibold hover:cursor-pointer">
                             Sign In
