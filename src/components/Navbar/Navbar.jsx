@@ -65,9 +65,9 @@ const Navbar = () => {
                             className="text-xs md:text-[16px] bg-mainColor py-2 md:py-3 px-3 rounded  font-semibold hover:cursor-pointer">
                             Sign Out
                         </Link> :
-                        <Link to="/signUp"
+                        <Link to="/signIn"
                             className="text-xs md:text-[16px] bg-mainColor py-2 md:py-3 px-3 rounded  font-semibold hover:cursor-pointer">
-                            Sign Up
+                            Sign In
                         </Link>
                 }
             </div>
