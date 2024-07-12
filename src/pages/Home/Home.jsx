@@ -4,13 +4,13 @@ import CstSubject from "../../components/CstSubject/CstSubject";
 
 const Home = () => {
     return (
-        <div className="mx-5 md:mx-10 lg:mx-28">
+        <main className="mx-5 md:mx-10 lg:mx-28">
         <Helmet>
             <title>Home | Cst Study Zone</title>
         </Helmet>
         <Banner/>
         <CstSubject/>
-        </div>
+        </main>
     );
 };
 

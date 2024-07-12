@@ -7,7 +7,7 @@ const Navbar = () => {
     const { user, logOut } = useAuth()
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/hw">Home Work</NavLink></li>
+        <li><NavLink to="/homeWork">Home Work</NavLink></li>
         <li><NavLink to="/suggestion">Suggestion</NavLink></li>
     </>
 
