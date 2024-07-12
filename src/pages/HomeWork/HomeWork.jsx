@@ -10,7 +10,7 @@ const HomeWork = () => {
             </Helmet>
             <header className="grid  grid-cols-2 mt-5 md:mt-10 items-center justify-center gap-2">
                 <div className="flex justify-center">
-                    <ul className="text-[10px] md:text-2xl lg:text-3xl font-bold space-y-2 md:space-y-5  font-PlaywriteUSModern">
+                    <ul className="font-semibold space-y-2 md:space-y-5   motive-container">
                         <li>{"Don't just learn ;"} <span className="motive">Experience</span></li>
                         <li>{"Don't just read ;"}  <span className="motive">Absorb</span></li>
                         <li>{"Don't just think ;"} <span className="motive">Ponder</span></li>
