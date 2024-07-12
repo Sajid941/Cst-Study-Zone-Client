@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import studyAnimation from '../../assets/study_animation.json'
 import './HomeWork.css'
+import DailyWorks from "../../components/DailyWorks/DailyWorks";
 const HomeWork = () => {
     return (
         <main className="mx-5 md:mx-10 lg:mx-28">
@@ -21,6 +22,7 @@ const HomeWork = () => {
                     <Lottie animationData={studyAnimation} loop={true}  />
                 </div>
             </header>
+            <DailyWorks/>
         </main>
     );
 };

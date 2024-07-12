@@ -5,6 +5,7 @@ import SignUp from "../pages/Auth/SignUp";
 import SignIn from "../pages/Auth/SignIn";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import HomeWork from "../pages/HomeWork/HomeWork";
+import SuggestionPage from "../pages/SuggestionPage/SuggestionPage";
 
 const router = createBrowserRouter (
     [
@@ -20,6 +21,10 @@ const router = createBrowserRouter (
                 {
                     path:'/homeWork',
                     element:<HomeWork/>
+                },
+                {
+                    path:'/suggestion',
+                    element:<SuggestionPage/>
                 }
             ]
         },
