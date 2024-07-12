@@ -1,0 +1,19 @@
+
+.card-shadow{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1 ) , -10px -10px 10px white  ;
+}
+.shake:hover{
+    animation: shake 0.2s;
+}
+@keyframes shake {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      rotate: -1deg;
+    }
+    20%, 40%, 60%, 80% {
+      rotate: 1deg;
+    }
+  }
+  

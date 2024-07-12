@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import Banner from "../../components/Banner/Banner";
+import CstSubject from "../../components/CstSubject/CstSubject";
 
 const Home = () => {
     return (
@@ -8,6 +9,7 @@ const Home = () => {
             <title>Home | Cst Study Zone</title>
         </Helmet>
         <Banner/>
+        <CstSubject/>
         </div>
     );
 };

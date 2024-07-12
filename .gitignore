@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+6th_Semester_Books.json
 
 # Editor directories and files
 .vscode/*
