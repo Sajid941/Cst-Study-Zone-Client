@@ -25,7 +25,8 @@ const CstSubject = () => {
                         <button
                             key={btnSemester}
                             className={`btn join-item ${semester === btnSemester && 'bg-mainColor'}`}
-                            onClick={() => setSemester(btnSemester)}
+                            onClick={() => setSemester('6th')}
+                            disabled={semester !== '6th'}
                         >
 
                             {btnSemester}

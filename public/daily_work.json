@@ -1,0 +1,68 @@
+[
+    {
+        "user_name": "sajid",
+        "user_img": "example/sajid.png",
+        "user_email": "sajid@example.com",
+        "subject_name": "computer networking",
+        "subject_code": "25944",
+        "HW": "write the diagram 5 times",
+        "HW_img": "example.png",
+        "chapter": "9",
+        "date": "13-07-23"
+    },
+    {
+        "user_name": "alex",
+        "user_img": "example/alex.png",
+        "user_email": "alex@example.com",
+        "subject_name": "data structures",
+        "subject_code": "36721",
+        "HW": "solve exercises 4.1 to 4.5",
+        "HW_img": "example2.png",
+        "chapter": "4",
+        "date": "14-07-23"
+    },
+    {
+        "user_name": "maria",
+        "user_img": "example/maria.png",
+        "user_email": "maria@example.com",
+        "subject_name": "operating systems",
+        "subject_code": "15342",
+        "HW": "read chapter 6",
+        "HW_img": "example3.png",
+        "chapter": "6",
+        "date": "15-07-23"
+    },
+    {
+        "user_name": "john",
+        "user_img": "example/john.png",
+        "user_email": "john@example.com",
+        "subject_name": "database systems",
+        "subject_code": "48219",
+        "HW": "complete lab 5",
+        "HW_img": "example4.png",
+        "chapter": "5",
+        "date": "16-07-23"
+    },
+    {
+        "user_name": "emma",
+        "user_img": "example/emma.png",
+        "user_email": "emma@example.com",
+        "subject_name": "software engineering",
+        "subject_code": "27653",
+        "HW": "write a project report",
+        "HW_img": "example5.png",
+        "chapter": "7",
+        "date": "17-07-23"
+    },
+    {
+        "user_name": "li",
+        "user_img": "example/li.png",
+        "user_email": "li@example.com",
+        "subject_name": "machine learning",
+        "subject_code": "59348",
+        "HW": "implement algorithm in chapter 8",
+        "HW_img": "example6.png",
+        "chapter": "8",
+        "date": "18-07-23"
+    }
+]

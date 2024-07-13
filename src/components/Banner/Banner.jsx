@@ -8,7 +8,7 @@ const Banner = () => {
                 <div className="md:p-5 lg:order-1">
                     <div className="relative">
                         <img src="https://i.postimg.cc/DZHRJr6q/IMG20240308122203.jpg" alt="Our_Image" className="rounded-2xl" />
-                        <div className="bg-gradient-to-t from-black/90 to-black/5 w-full h-full absolute top-0 rounded-2xl text-white flex justify-center md:justify-start">
+                        <div className="bg-gradient-to-t from-black/80 to-black/5 w-full h-full absolute top-0 rounded-2xl text-white flex justify-center md:justify-start">
                             <p
                                 className="absolute bottom-3 md:left-5 bg-white rounded-full bg-opacity-15 px-3 py-1 border border-gray-500 text-xs md:text-sm">
                                 Computer Science & Technology
