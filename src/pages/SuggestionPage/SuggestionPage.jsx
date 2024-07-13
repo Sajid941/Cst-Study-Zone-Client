@@ -1,14 +1,19 @@
+import { Helmet } from "react-helmet";
+import SuggestionBanner from "../../components/SuggestionBanner/SuggestionBanner";
+import SugOfSubject from "../../components/SugOfSubject/SugOfSubject";
 
 const SuggestionPage = () => {
-    return (
-        <main>
-            <div className="h-screen flex justify-center items-center">
-                <h1 className="text-[3vw] text-blue-700">This page under construction ⚠️</h1>
-                <h1> hi i am masum </h1>
-                <h1> hi i am masum.. </h1>
-            </div>
-        </main>
-    );
+  return (
+    <div>
+      <Helmet>
+        <title>Suggestion | Cst Study Zone</title>
+      </Helmet>
+      <div>
+        <SuggestionBanner />
+        <SugOfSubject />
+      </div>
+    </div>
+  );
 };
 
 export default SuggestionPage;
