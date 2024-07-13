@@ -1,0 +1,12 @@
+.tag {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    color: #737373;
+}
+
+.subject-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
