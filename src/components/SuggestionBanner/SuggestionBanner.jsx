@@ -25,6 +25,7 @@ const SuggestionBanner = () => {
         </div>
       </Parallax>
     </div>
+    
   );
 };
 

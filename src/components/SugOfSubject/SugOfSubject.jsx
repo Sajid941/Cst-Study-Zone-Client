@@ -47,6 +47,7 @@ const SugOfSubject = () => {
                     </span>
                   </div>
                 </div>
+                
                 <div>
                   <p className="text-sm font-medium text-black dark:text-gray-600">
                     Exam date: <br /> {book.exam_date}
