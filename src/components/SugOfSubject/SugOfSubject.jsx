@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const SugOfSubject = () => {
   const { data: suggestion, isLoading } = useQuery({
-    queryKey: ["books"],
+    queryKey: ["suggestion books list"],
     queryFn: async () => {
       const res = await axios("6th_suggestion.json");
       return res.data;
