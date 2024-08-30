@@ -19,7 +19,7 @@ const CstSubject = () => {
     return (
         <section>
             <SectTitle title="Cst Subjects" />
-            <div className="join flex justify-center my-10 hor">
+            <div className="join flex justify-center my-10 ">
                 {
                     btnSemesters.map(btnSemester => (
                         <button
